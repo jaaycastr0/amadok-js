@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
@@ -9,7 +12,11 @@
   <title>Frases Aleatórias - Amadok</title>
 
   <style>
+    body{
+      font-family: 'Manrope', sans-serif;
+    }
     .container {
+      position: relative;
       width: 100%;
       max-width: 400px;
       background-color: #111;
@@ -20,12 +27,33 @@
       margin-top: 20%;
       padding: 20px;
     }
+    p{
+      color: hsl(150,100%,66%);
+      text-transform: uppercase;
+      font-weight: 800;
+      text-align: center;
+    }
+    .icon {
+      background-color:hsl(150,100%,66%) ;
+      width:30px;
+      height: 30px;
+      padding: 10px;
+      display: flex;
+      place-content: center;
+      border-radius: 50%;
+      position: absolute;
+      bottom: -25px;
+      left: calc(50% - 25px);
+    }
   </style>
 </head>
 <body>
   <main class="container">
     <p>Advice #117</p>
     <h1>"Amadok, aulas de css, html e javascript"</h1>
+    <div class="icon">
+    <img src="./images/icon-dice.svg" alt="icon-dice"/>
+    </div>
   </main>
 </body>
 </html>
